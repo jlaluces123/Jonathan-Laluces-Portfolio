@@ -1,0 +1,14 @@
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  margin-top: 1%;
+}
+
+.pages-list {
+  display: none;
+}
