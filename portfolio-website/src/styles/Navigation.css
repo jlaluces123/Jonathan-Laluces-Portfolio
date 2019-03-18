@@ -9,6 +9,10 @@
   margin-top: 1%;
 }
 
+.active-style {
+  display: block;
+}
+
 .pages-list {
   display: none;
 }
