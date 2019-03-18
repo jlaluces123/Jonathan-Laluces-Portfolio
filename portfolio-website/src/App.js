@@ -5,11 +5,19 @@ import './App.css';
 import { Navigation } from "./components/Navigation.js";
 
 class App extends Component {
+
+  clickMenu = (e) => {
+    e.preventDefault();
+    console.log("Menu Clicked")
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Navigation />
+          <Navigation 
+            clickMenu = {this.clickMenu}
+          />
         </header>
       </div>
     );
