@@ -3,6 +3,7 @@ import './App.css';
 
 // --> Components Imports
 import Navigation from "./components/Navigation.js";
+import { Home } from "./components/Home.js";
 
 class App extends Component {  
 
@@ -12,6 +13,10 @@ class App extends Component {
         <header className="App-header">
           <Navigation />
         </header>
+
+        <section>
+          <Home />
+        </section>
       </div>
     );
   }
