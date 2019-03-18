@@ -20,14 +20,14 @@ class Navigation extends React.Component {
       <div className = "navigation-wrapper">
         <h3 className = "navigation-header">Jonathan Laluces</h3>
   
-        <div className = "hamburger-menu">
+        <div className = "hamburger-menu" >
           <a className = "toggle" onClick = {this.clickMenu}>
-            <svg style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
+            <svg className = {this.state.active ? "hide" : null} style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
               <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
             </svg>  
           </a>      
           <ul className = {this.state.active ? "active-style" : "pages-list"}>
-            <button className = "close-toggle">X</button>
+            <a className = "toggle" onClick = {this.clickMenu}>X</a>
             <li><a href="/">Home</a></li>
             <li><a href="/">About</a></li>
             <li><a href="/">Projects</a></li>
