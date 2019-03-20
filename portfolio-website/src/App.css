@@ -1,3 +1,8 @@
+/*
+  Headers: font-family: 'Oswald', sans-serif;
+  Paragraphs: font-family: 'Open Sans', sans-serif;
+*/
+
 .App {
   text-align: center;
 }
@@ -8,8 +13,7 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.App-header {  
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -17,6 +21,9 @@
   justify-content: center;
   /* font-size: calc(10px + 2vmin); */
   color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 50000;
 }
 
 .App-link {

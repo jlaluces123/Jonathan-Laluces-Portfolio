@@ -1,12 +1,38 @@
 import React from "react";
 import "../styles/Navigation.css";
+import Logo from "../images/Logo.png";
 
-// --> Helper Function to handle opening the Burger Menu
+// --> Module Imports
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 
 
 class Navigation extends React.Component {
   state = {
     active: false
+  };
+
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function() {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function() {
+      console.log("end", arguments);
+    });
+  };
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  };
+
+  scrollTo() {
+    scroller.scrollTo('scroll-to-element', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+    console.log("scrollTo invoked");
   };
 
   clickMenu = (event) => {
@@ -18,7 +44,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className = "navigation-wrapper">
-        <h3 className = "navigation-header">Jonathan Laluces</h3>
+        <img className = "logo" src = {Logo} alt = "logo" />
   
         <div className = "hamburger-menu" >
           <a className = "toggle" onClick = {this.clickMenu}>
@@ -33,8 +59,8 @@ class Navigation extends React.Component {
               </svg>
             </a>
             <ul className = "pages-menu">              
-              <li><a className = "pages-menu-item" href="#home">Home</a></li>
-              <li><a className = "pages-menu-item" href="#about">About</a></li>
+              <li><Link to = "home" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Home</Link></li>
+              <li><Link to = "about-me" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>About</Link></li>
               <li><a className = "pages-menu-item" href="#projects">Projects</a></li>
               <li><a className = "pages-menu-item" href="#blog">Blog</a></li>
               <li><a className = "pages-menu-item" href="#contact">Contact</a></li>
