@@ -3,7 +3,9 @@ import React from "react";
 export const AboutMe = props => {
 
   return (
-    <h1>I am the About Me Section</h1>
+    <div className = "about-me-wrapper">
+      <h1>Who I Am</h1>
+    </div>
   );
 
 };
