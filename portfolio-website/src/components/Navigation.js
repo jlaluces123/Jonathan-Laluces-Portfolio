@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Navigation.css";
+import Logo from "../images/Logo.png";
 
 // --> Module Imports
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
@@ -43,7 +44,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className = "navigation-wrapper">
-        <h3 className = "navigation-header">Jonathan Laluces</h3>
+        <img className = "logo" src = {Logo} alt = "logo" />
   
         <div className = "hamburger-menu" >
           <a className = "toggle" onClick = {this.clickMenu}>

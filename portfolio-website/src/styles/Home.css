@@ -32,6 +32,10 @@
   font-size: 1.2rem;
 }
 
+.intro-text {
+  font-size: 2rem;
+}
+
 /* Typing Component */
 
 
@@ -42,6 +46,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0 20px;
+  font-size: 1.3rem;
 }
 
 .learn-more-wrapper:hover {

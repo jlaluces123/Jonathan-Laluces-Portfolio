@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   height: 100vh;
-  background-color: #2F2F2F;
+  background-color: #98D2EB;
 }
 
 .left-side {
@@ -21,6 +21,12 @@
   color: white;
   font-size: 2rem;  
   margin-bottom: 0;
+  border-bottom: 3px solid white;
+  display: inline-block; /* This is solely for the border bottom */
+}
+
+.title {
+  color: white;
 }
 
 .image-wrapper {
@@ -41,4 +47,7 @@
 .description-text {
   margin: 0 20%;
   text-align: left;
+  color: white;
+  font-weight: 200;
+  line-height: 1.7;
 }
