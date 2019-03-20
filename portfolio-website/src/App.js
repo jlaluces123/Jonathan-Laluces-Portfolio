@@ -4,6 +4,7 @@ import './App.css';
 // --> Components Imports
 import Navigation from "./components/Navigation.js";
 import Home from "./components/Home.js";
+import { AboutMe } from "./components/AboutMe.js";
 
 class App extends Component {    
 
@@ -19,7 +20,7 @@ class App extends Component {
         </section>
 
         <section className = "about-me-section" name = "about-me">
-        
+          <AboutMe />
         </section>
       </div>
     );
