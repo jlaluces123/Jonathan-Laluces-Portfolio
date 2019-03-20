@@ -15,7 +15,7 @@ class App extends Component {
           <Navigation />
         </header>
 
-        <section className = "home-section">
+        <section className = "home-section" name = "home">
           <Home />
         </section>
 
