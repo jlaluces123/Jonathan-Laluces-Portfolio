@@ -8,9 +8,12 @@
   background-size: cover;
 }
 
+
+/* Typing Component */
+
 .typing-overlay {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute; 
@@ -27,3 +30,24 @@
   flex-direction: row;
   font-size: 1.2rem;
 }
+
+/* Typing Component */
+
+
+/* Learn More */
+
+.learn-more-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.learn-more-wrapper:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Learn More */

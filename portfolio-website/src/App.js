@@ -3,9 +3,9 @@ import './App.css';
 
 // --> Components Imports
 import Navigation from "./components/Navigation.js";
-import { Home } from "./components/Home.js";
+import Home from "./components/Home.js";
 
-class App extends Component {  
+class App extends Component {    
 
   render() {
     return (
@@ -16,6 +16,10 @@ class App extends Component {
 
         <section className = "home-section">
           <Home />
+        </section>
+
+        <section className = "about-me-section" name = "about-me">
+        
         </section>
       </div>
     );
