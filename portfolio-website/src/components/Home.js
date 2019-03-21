@@ -5,7 +5,7 @@ import "../styles/Home.css";
 
 // --> Module Imports
 import Typing from "react-typing-animation";
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link, Events, animateScroll as scroller } from "react-scroll";
 
 class Home extends React.Component {
 
