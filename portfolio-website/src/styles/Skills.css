@@ -1,12 +1,23 @@
 .skills-section-wrapper {
   height: 100vh;
-  width: 100%;
-  background-color: #2F2F2F;
+  width: 100%;   
+}
+
+.image-overlay {
+  width: inherit;
+  height: inherit;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  opacity: 0.9;
+  background-color: #2E2E2E; 
 }
 
 .skills-header {
   margin-top: 0;
-  padding-top: 19.920px;
+  padding-top: 19.920px;  
+  color: white;
+  margin-bottom: 0;
 }
 
 .tab-list {
@@ -15,9 +26,48 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
+  color: white;
 }
 
 .tab-item {
   border-bottom: 3px solid white;
   padding-bottom: 5px;  
+  cursor: pointer;
+}
+
+.skill-tab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: inherit;  
+  justify-content: center;
+}
+
+.background-one {
+  background-image: url("../images/front-end.jpg");
+  background-size: cover;
+  background-position: center;  
+  z-index: 5000;
+}
+
+.background-two {
+  background-image: url("../images/back-end.jpg");
+  background-size: cover;
+  background-position: center;  
+  z-index: 5000;
+}
+
+.skill-item {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 20px;  
+}
+
+.skill-item:hover {    
+  background-color: white;
+  color: black;
+  transition: 0.3s;
 }

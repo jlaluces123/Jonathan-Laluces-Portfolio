@@ -11,49 +11,58 @@ class Skills extends React.Component {
 
   componentDidMount = () => {
     // --> We want the first tab to be open by default 
-    this.setState({ activeOne: true });
-    console.log(`activeOne: ${this.state.activeOne} || activeTwo: ${this.state.activeTwo}`)
-    console.log("did mount");
+    this.setState({
+      activeOne: true,
+      frontEndArray: ['HTML', 'CSS', 'LESS', 'Material-UI', 'Flex-Box', 'React', 'Redux', 'JavaScript' ],
+      backEndArray: ['Python', 'NodeJS', 'Express', 'Knex', 'SQLite', 'C']
+    });        
   };
 
   componentDidUpdate() { // --> this.setState isn't instant, so we use a didUpdate() to counter-act that
-    console.log("updated");
-    console.log(`activeOne: ${this.state.activeOne} || activeTwo: ${this.state.activeTwo}`)
+    console.log("update");
   };
 
   handleTabChange = (event) => {
     event.preventDefault();        
-    event.target.value === 1 ? (      
+    event.target.value === 1 ? (            
       this.setState({ activeOne: true, activeTwo: false })     
     ) : (
       this.setState({ activeTwo: true, activeOne: false })      
     );    
-  };  
+  };   
   
   render() {
     return (
-      <div className = "skills-section-wrapper">
-        <h1 className = "skills-header">Skills</h1>
-  
-        {/* Tabs For Front End and Back End */}
-        <div className = "skills-tab-wrapper">
-  
-          <ul className = "tab-list">
-            <li value = "1" className = "tab-item" onClick = {this.handleTabChange}>Front End</li>          
-            <li value = "2" className = "tab-item" onClick = {this.handleTabChange}>Back End</li>
-          </ul>
-  
-          <ul className = "front-end-tab">
-            {this.state.frontEndArray.map(element => {
-              return <a href = "/#" className = "skill-item">{ element }</a>;
-            })}
-          </ul>
-  
-          <ul className = "back-end-tab">
-            {this.state.backEndArray.map(element => {
-              return <a href = "/#" className = "skill-item">{ element }</a>;
-            })}
-          </ul>
+      <div className = {this.state.activeOne ? "skills-section-wrapper background-one" : "skills-section-wrapper background-two"}>
+        <div className = "image-overlay">
+          <h1 className = "skills-header">Skills</h1>
+    
+          {/* Tabs For Front End and Back End */}
+          <div className = "skills-tab-wrapper">
+    
+            <ul className = "tab-list">
+              <li value = "1" className = "tab-item" onClick = {this.handleTabChange}>Front End</li>          
+              <li value = "2" className = "tab-item" onClick = {this.handleTabChange}>Back End</li>
+            </ul>
+
+            {/* Tab Now renders either the front-end or back-end list */}
+            {this.state.activeOne === true ? (
+              // console.log("tab one is up") --> verify if the tab one is open by default
+              <ul className = "skill-tab">
+                {this.state.frontEndArray.map(element => {
+                  return <a href = "/#" className = "skill-item" key = {element}>{ element }</a>;
+                })}
+              </ul>
+            ) : (
+              <ul className = "skill-tab">
+                {this.state.backEndArray.map(element => {
+                  return <a href = "/#" className = "skill-item" key = {element}>{ element }</a>;
+                })}
+              </ul>
+            )}
+            
+              
+          </div>
         </div>
       </div>
     );
