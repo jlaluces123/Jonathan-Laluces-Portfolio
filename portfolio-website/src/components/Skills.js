@@ -50,13 +50,13 @@ class Skills extends React.Component {
               // console.log("tab one is up") --> verify if the tab one is open by default
               <ul className = "skill-tab">
                 {this.state.frontEndArray.map(element => {
-                  return <a href = "/#" className = "skill-item" key = {element}>{ element }</a>;
+                  return <a className = "skill-item" key = {element}>{ element }</a>;
                 })}
               </ul>
             ) : (
               <ul className = "skill-tab">
                 {this.state.backEndArray.map(element => {
-                  return <a href = "/#" className = "skill-item" key = {element}>{ element }</a>;
+                  return <a className = "skill-item" key = {element}>{ element }</a>;
                 })}
               </ul>
             )}
