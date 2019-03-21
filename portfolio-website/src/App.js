@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from "./components/Navigation.js";
 import Home from "./components/Home.js";
 import { AboutMe } from "./components/AboutMe.js";
+import Skills from "./components/Skills.js";
 
 class App extends Component {    
 
@@ -21,6 +22,10 @@ class App extends Component {
 
         <section className = "about-me-section" name = "about-me">
           <AboutMe />
+        </section>
+
+        <section className = "skills-section" name = "skills">
+          <Skills />
         </section>
       </div>
     );

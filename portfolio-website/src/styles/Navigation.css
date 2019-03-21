@@ -15,8 +15,7 @@
   display: none;
 }
 
-.active-style {
-  z-index: 5000;
+.active-style {  
   background-color: #282c34;
   top: 88;
   list-style: none;
