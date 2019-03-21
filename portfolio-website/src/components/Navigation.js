@@ -3,7 +3,7 @@ import "../styles/Navigation.css";
 import Logo from "../images/Logo.png";
 
 // --> Module Imports
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link, Events, animateScroll as scroller } from "react-scroll";
 
 
 class Navigation extends React.Component {
@@ -47,13 +47,13 @@ class Navigation extends React.Component {
         <img className = "logo" src = {Logo} alt = "logo" />
   
         <div className = "hamburger-menu" >
-          <a className = "toggle" onClick = {this.clickMenu}>
+          <a className = "toggle" onClick = {this.clickMenu} href = "/#">
             <svg className = {this.state.active ? "hide" : null} style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
               <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
             </svg>  
           </a>      
           <div className = {this.state.active ? "active-style" : "pages-list"}>
-            <a className = "toggle" onClick = {this.clickMenu}>
+            <a className = "toggle" onClick = {this.clickMenu} href = "/#">
               <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
                 <path fill="#fff" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
               </svg>
