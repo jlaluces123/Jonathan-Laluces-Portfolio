@@ -5,7 +5,7 @@ import './App.css';
 import Navigation from "./components/Navigation.js";
 import Home from "./components/Home.js";
 import { AboutMe } from "./components/AboutMe.js";
-import { Skills } from "./components/Skills.js";
+import Skills from "./components/Skills.js";
 
 class App extends Component {    
 

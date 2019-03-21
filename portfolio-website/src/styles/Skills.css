@@ -1,0 +1,23 @@
+.skills-section-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #2F2F2F;
+}
+
+.skills-header {
+  margin-top: 0;
+  padding-top: 19.920px;
+}
+
+.tab-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.tab-item {
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;  
+}
