@@ -61,7 +61,7 @@ class Navigation extends React.Component {
             <ul className = "pages-menu">              
               <li><Link to = "home" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Home</Link></li>
               <li><Link to = "about-me" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>About</Link></li>
-              <li><a className = "pages-menu-item" href="#projects">Projects</a></li>
+              <li><Link to = "skills" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Skills</Link></li>
               <li><a className = "pages-menu-item" href="#blog">Blog</a></li>
               <li><a className = "pages-menu-item" href="#contact">Contact</a></li>
             </ul>
