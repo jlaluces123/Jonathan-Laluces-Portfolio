@@ -1,11 +1,15 @@
 .projects-wrapper {
   width: 100%;
   height: auto;  
-  background-color: #9FA2B2;
-  padding: 150px 0px;
+  background-color: #9FA2B2;  
   display: flex;  
   justify-content: center;
   flex-direction: column;
+}
+
+.projects-header {
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .row {

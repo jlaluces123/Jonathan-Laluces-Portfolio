@@ -7,6 +7,7 @@ import ScreenShotTwo from "../images/TakeNotes.png";
 export const Projects = props => {
   return (
     <div className = "projects-wrapper">
+      <h1 className = "projects-header">Projects</h1>
       <div className = "row">
         {/* Picture of App */}
         <div className = "app-pic-wrapper">
@@ -18,10 +19,20 @@ export const Projects = props => {
         {/* Text Description */}
         <div className = "app-text-wrapper text-wrapper-1">
           <h1 className = "app-header">Let's Get Tacos</h1>
+
           <p className = "app-description">
             Let's Get Tacos is an event meet­up app centered around 
             avid taco eaters who love to eat with other people of the same interest.
+          </p>        
+
+          <p className = "app-description">
+            Front End Tech: React, Redux, Material-UI, Styled Components, Firebase Authentication Service, and Axios.
           </p>
+
+          <p className = "app-description">
+            Back End Tech: Node.JS, Express, Knex, BcryptJS, Cors, Faker, PostgreSQL, and Heroku for deployment
+          </p>
+
           <a className = "learn-more" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
         </div>
       </div>
@@ -37,10 +48,20 @@ export const Projects = props => {
         {/* Text Description */}
         <div className = "app-text-wrapper text-wrap">
           <h1 className = "app-header">Take Notes</h1>
+
           <p className = "app-description">
             Take Notes is a simple note taking app that allows users to: create, review, 
             update, and delete their notes!
           </p>
+
+          <p className = "app-description">
+            Front End Tech: React, Redux, and Axios.
+          </p>
+
+          <p className = "app-description">
+            Back End Tech: Node.js, Express, Knex, Cors, and BcryptJS.
+          </p>
+
           <a className = "learn-more" href = "github.com/jlaluces123" target="_blank">Learn More</a>
         </div>
       </div>
