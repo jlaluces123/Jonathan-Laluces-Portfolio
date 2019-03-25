@@ -4,8 +4,10 @@ import './App.css';
 // --> Components Imports
 import Navigation from "./components/Navigation.js";
 import Home from "./components/Home.js";
-import { AboutMe } from "./components/AboutMe.js";
 import Skills from "./components/Skills.js";
+import { AboutMe } from "./components/AboutMe.js";
+import { Projects } from "./components/Projects.js";
+
 
 class App extends Component {    
 
@@ -26,6 +28,10 @@ class App extends Component {
 
         <section className = "skills-section" name = "skills">
           <Skills />
+        </section>
+
+        <section className = "projects-section" name = "projects">
+          <Projects />
         </section>
       </div>
     );
