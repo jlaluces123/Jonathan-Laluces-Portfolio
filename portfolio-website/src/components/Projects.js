@@ -62,7 +62,7 @@ export const Projects = props => {
             Back End Tech: Node.js, Express, Knex, Cors, and BcryptJS.
           </p>
 
-          <a className = "learn-more" href = "github.com/jlaluces123" target="_blank">Learn More</a>
+          <a className = "learn-more" href = "https://www.github.com/jlaluces123/TakeNotes" target="_blank">Learn More</a>
         </div>
       </div>
     </div>
