@@ -1,6 +1,10 @@
 import React from "react";
 
 class Contact extends React.Component {
+  state = {
+    email: "",
+    message: "",
+  };
   
   handleInputChange = e => {
     e.preventDefault(); // --> Prevent Bubbling up
@@ -16,7 +20,9 @@ class Contact extends React.Component {
     return (
       <div className = "contact-form-wrapper">  
         <form onSubmit = {this.handleSubmit} action="https://formspree.io/jlalucescareer123@gmail.com" method="POST">
-  
+          <input type="email" name="email" value = {this.state.email} placeholder="Your email" />
+          <textarea name="message" value = {this.state.message} placeholder="Test Message"></textarea>
+          <button type="submit">Send Test</button>
         </form>
       </div>
     );
