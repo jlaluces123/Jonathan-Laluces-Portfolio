@@ -5,4 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #2F2F2F;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
 }

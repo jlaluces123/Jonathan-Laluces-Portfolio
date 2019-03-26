@@ -20,12 +20,16 @@ class Contact extends React.Component {
   render() {
     return (
       <div className = "contact-form-wrapper"> 
-        <h1 className = "contact-header">Contact Me</h1>
-        <form onSubmit = {this.handleSubmit} action="https://formspree.io/jlalucescareer123@gmail.com" method="POST">
-          <input className = "email-input" onChange = {this.handleInputChange} type="email" name="email" value = {this.state.email} placeholder="Your email" />
-          <textarea className = "email-text" onChange = {this.handleInputChange} name="message" value = {this.state.message} placeholder="Test Message"></textarea>
-          <button className = "submit-button" type="submit" onSubmit = {this.handleSubmit}>Send Test</button>
-        </form>
+        <div className = "form-wrapper">
+          <h1 className = "contact-header">Get In Touch</h1>
+          <form className = "form-element" onSubmit = {this.handleSubmit} action="https://formspree.io/jlalucescareer123@gmail.com" method="POST">
+            <label className = "label-element" for = "email">Email</label>
+            <input className = "email-input" onChange = {this.handleInputChange} type="email" name="email" value = {this.state.email} placeholder="Your email" />
+            <label className = "label-element" for = "message">Message</label>
+            <textarea className = "email-text" onChange = {this.handleInputChange} name="message" value = {this.state.message} placeholder="Test Message"></textarea>
+            <button className = "submit-button" type="submit" onSubmit = {this.handleSubmit}>Send Test</button>
+          </form>
+        </div>
       </div>
     );
   }  
