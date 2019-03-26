@@ -3,3 +3,26 @@
   width: auto;
   cursor: pointer;
 }
+
+.article-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-box-wrapper {
+  width: 30%;
+}
+
+.blog-image {
+  overflow: hidden;
+}
+
+.title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-description {
+  text-align: left;
+}
+
