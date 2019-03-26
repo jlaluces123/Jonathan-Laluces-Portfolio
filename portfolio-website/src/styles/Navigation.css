@@ -22,7 +22,7 @@
   padding: 5px;
 }
 
-.active-style {  
+.active-style {    
   background-color: #282c34;
   top: 88;
   list-style: none;
@@ -42,6 +42,7 @@
 
 .pages-list {
   display: none;
+  transition: 0.3s;
 }
 
 .pages-menu {
