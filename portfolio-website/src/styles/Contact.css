@@ -10,5 +10,63 @@
 
 .form-element {
   display: flex;
+  height: 300px;
+  justify-content: space-evenly;
+  text-align: left;
   flex-direction: column;
+}
+
+.form-wrapper {
+  width: 40%;
+}
+
+.contact-header {
+  color: white;
+}
+
+.info-section {
+  color: white;
+}
+
+.first-wrapper {
+  display: flex;  
+  flex-direction: column;
+}
+
+.label-element {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+}
+
+.email-input {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.0rem;
+}
+
+.second-wrapper {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.email-text {
+  border: none;
+  height: 58px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin: 0px;
+}
+
+.submit-button {
+  border: none;
+  margin-top: 10px;
+  width: 40%;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
