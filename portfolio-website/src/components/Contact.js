@@ -55,7 +55,7 @@ class Contact extends React.Component {
               &nbsp;
               Submit
             </label>
-            <button name = "submit" className = "submit-button" type="submit" onSubmit = {this.handleSubmit}>Submit</button>
+            <button name = "submit" className = "submit-button" type="submit" onSubmit = {this.handleSubmit}>Send An Email</button>
           </form>
 
         </div>
