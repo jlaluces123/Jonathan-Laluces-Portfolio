@@ -15,6 +15,13 @@
   display: none;
 }
 
+.hamburger-menu:hover {
+  background-color: #242424;  
+  border-radius: 50%;
+  transition: 0.2s;
+  padding: 5px;
+}
+
 .active-style {  
   background-color: #282c34;
   top: 88;
@@ -51,6 +58,7 @@
   color: white;
   text-decoration: none;  
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .pages-menu-item:hover {

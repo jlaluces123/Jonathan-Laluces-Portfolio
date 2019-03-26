@@ -48,16 +48,18 @@ class Navigation extends React.Component {
   
         <div className = "hamburger-menu" >
           <a className = "toggle" onClick = {this.clickMenu} href = "/#">
-            <svg className = {this.state.active ? "hide" : null} style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
-              <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            <svg className = {this.state.active ? "hide" : "active-on"} style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
+              <path className = "arrow-right" fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
             </svg>  
-          </a>      
+          </a>    
+
           <div className = {this.state.active ? "active-style" : "pages-list"}>
             <a className = "toggle" onClick = {this.clickMenu} href = "/#">
               <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
                 <path fill="#fff" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
               </svg>
             </a>
+
             <ul className = "pages-menu">              
               <li><Link to = "home" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Home</Link></li>
               <li><Link to = "about-me" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>About</Link></li>
@@ -66,6 +68,7 @@ class Navigation extends React.Component {
               <li><Link to = "writing" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Writing</Link></li>
               <li><Link to = "contact" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Contact</Link></li>
             </ul>
+            
           </div>
         </div>
   
