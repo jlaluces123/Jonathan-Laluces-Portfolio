@@ -9,6 +9,7 @@ import { AboutMe } from "./components/AboutMe.js";
 import { Projects } from "./components/Projects.js";
 import { Blog } from "./components/Blog.js";
 import Contact from "./components/Contact.js";
+import { Footer } from "./components/Footer.js";
 
 
 class App extends Component {    
@@ -43,6 +44,10 @@ class App extends Component {
         <section className = "contact-section" name = "contact">
           <Contact />
         </section>
+
+        <footer className = "footer-section">
+          <Footer />
+        </footer>
       </div>
     );
   }

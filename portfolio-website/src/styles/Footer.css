@@ -1,0 +1,12 @@
+.footer-wrapper {
+  background-color: #9FA2B2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-icon:hover {
+  background-color: grey;
+  border-radius: 50%;
+  transition: 0.4s;
+}
