@@ -8,7 +8,7 @@ import Skills from "./components/Skills.js";
 import { AboutMe } from "./components/AboutMe.js";
 import { Projects } from "./components/Projects.js";
 import { Blog } from "./components/Blog.js";
-import { Contact } from "./components/Contact.js";
+import Contact from "./components/Contact.js";
 
 
 class App extends Component {    
