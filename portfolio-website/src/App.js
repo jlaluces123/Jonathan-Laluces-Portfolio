@@ -25,25 +25,25 @@ class App extends Component {
           <Home />
         </section>
 
-        <section className = "about-me-section" name = "about-me">
-          <AboutMe />
-        </section>
-
         <section className = "skills-section" name = "skills">
           <Skills />
         </section>
 
         <section className = "projects-section" name = "projects">
           <Projects />
-        </section>
+        </section>               
 
         <section className = "blog-section" name = "writing">
           <Blog />
-        </section>
+        </section>        
 
         <section className = "contact-section" name = "contact">
           <Contact />
         </section>
+
+        <section className = "about-me-section" name = "about-me">
+          <AboutMe />
+        </section> 
 
         <footer className = "footer-section">
           <Footer />
