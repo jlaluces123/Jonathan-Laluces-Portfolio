@@ -34,7 +34,7 @@ export const Projects = props => {
             Back End Tech: Node.JS, Express, Knex, BcryptJS, Cors, Faker, PostgreSQL, and Heroku for deployment
           </p>
 
-          <a className = "learn-more" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export const Projects = props => {
             Back End Tech: Node.js, Express, Knex, Cors, and BcryptJS.
           </p>
 
-          <a className = "learn-more" href = "https://www.github.com/jlaluces123/TakeNotes" target="_blank">Learn More</a>
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://www.github.com/jlaluces123/TakeNotes" target="_blank">Learn More</a>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export const Projects = props => {
             Back-End Tech: GraphQL
           </p>
 
-          <a className = "learn-more" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">Learn More</a>
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">Learn More</a>
         </div>
       </div>
     </div>
