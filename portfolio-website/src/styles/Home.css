@@ -33,7 +33,7 @@
 }
 
 .intro-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* Typing Component */
@@ -47,6 +47,17 @@
   align-items: center;
   padding: 0 20px;
   font-size: 1.3rem;
+}
+
+.scroll-to {
+  cursor: pointer;
+}
+
+.scroll-to:hover {
+  border-radius: 50%;
+  border: 4px solid white;  
+  background-color: white;
+  transition: 0.1s; 
 }
 
 .learn-more-wrapper:hover {

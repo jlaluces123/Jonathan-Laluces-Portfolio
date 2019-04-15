@@ -3,6 +3,7 @@ import "../styles/Projects.css";
 
 import ScreenShotOne from "../images/Events Page ScreenShot.png";
 import ScreenShotTwo from "../images/TakeNotes.png";
+import ScreenShotThree from "../images/DevBlog.png";
 
 export const Projects = props => {
   return (
@@ -11,7 +12,7 @@ export const Projects = props => {
       <div className = "row">
         {/* Picture of App */}
         <div className = "app-pic-wrapper">
-          <a href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">
+          <a rel="noopener noreferrer" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">
             <img src = {ScreenShotOne} alt = "events-page" className = "app-screen-shot" />
           </a>
         </div>
@@ -33,14 +34,14 @@ export const Projects = props => {
             Back End Tech: Node.JS, Express, Knex, BcryptJS, Cors, Faker, PostgreSQL, and Heroku for deployment
           </p>
 
-          <a className = "learn-more" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
         </div>
       </div>
 
       <div className = "row row-2">
          {/* Picture of App */}
          <div className = "app-pic-wrapper">
-          <a href = "https://github.com/jlaluces123/TakeNotes" target = "_blank">
+          <a rel="noopener noreferrer" href = "https://github.com/jlaluces123/TakeNotes" target = "_blank">
             <img src = {ScreenShotTwo} alt = "events-page" className = "app-screen-shot" />
           </a>
         </div>
@@ -62,7 +63,36 @@ export const Projects = props => {
             Back End Tech: Node.js, Express, Knex, Cors, and BcryptJS.
           </p>
 
-          <a className = "learn-more" href = "https://www.github.com/jlaluces123/TakeNotes" target="_blank">Learn More</a>
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://www.github.com/jlaluces123/TakeNotes" target="_blank">Learn More</a>
+        </div>
+      </div>
+
+      <div className = "row">
+        {/* Picture of App */}
+        <div className = "app-pic-wrapper">
+          <a rel="noopener noreferrer" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">
+            <img src = {ScreenShotThree} alt = "events-page" className = "app-screen-shot" />
+          </a>
+        </div>
+
+        {/* Text Description */}
+        <div className = "app-text-wrapper text-wrapper-1">
+          <h1 className = "app-header">Gatsby Blog Website</h1>
+
+          <p className = "app-description">
+            This is a blog website I made for fun to learn Gatsby as well as using a bit of GraphQL! I take advantage of markdown
+            to create the blogs
+          </p>        
+
+          <p className = "app-description">
+            Front-End Tech: React, Gatsby
+          </p>         
+
+          <p className = "app-description">
+            Back-End Tech: GraphQL
+          </p>
+
+          <a className = "learn-more" rel="noopener noreferrer" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">Learn More</a>
         </div>
       </div>
     </div>

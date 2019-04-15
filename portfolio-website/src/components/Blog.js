@@ -12,14 +12,14 @@ export const Blog = props => {
       <div className = "article-wrapper">
         <article className = "blog-box-wrapper">
           <div className = "blog-image">          
-            <a href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank">
+            <a rel="noopener noreferrer" href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank">
               <img className = "blog-cover" src = {Backend} alt = "back-end code" />
             </a>
           </div>
 
           <p className = "date white">Mar 22, 2019</p>
           <h3 className = "blog-title">
-            <a className = "title-link white" href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank">
+            <a rel="noopener noreferrer" className = "title-link white" href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank">
               3 Things I Wish I Could Tell Myself To Prep for Coding Bootcamp
             </a>
           </h3>
@@ -29,7 +29,7 @@ export const Blog = props => {
             graduating high school in 2018, and have been a student at the Lambda School 
             Web Development Program for over 6 months.
           </p>
-          <a href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank" className = "read-more white">
+          <a rel="noopener noreferrer" href = "https://medium.com/@jlalucescareer123/3-things-i-wish-i-could-tell-myself-to-prep-for-coding-bootcamp-c6d4dc6aa787" target = "_blank" className = "read-more white">
             READ MORE &#x2192;
           </a>
         </article>
