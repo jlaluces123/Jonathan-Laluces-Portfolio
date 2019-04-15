@@ -92,7 +92,7 @@ export const Projects = props => {
             Back-End Tech: GraphQL
           </p>
 
-          <a className = "learn-more" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">Learn More</a>
+          <a className = "learn-more" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">Learn More</a>
         </div>
       </div>
     </div>
