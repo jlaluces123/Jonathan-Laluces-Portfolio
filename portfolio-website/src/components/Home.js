@@ -10,12 +10,12 @@ import { Link, Events, animateScroll as scroller } from "react-scroll";
 class Home extends React.Component {
 
   componentDidMount() {
-    Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
+    Events.scrollEvent.register('begin', function() {  
+      return;    
     });
 
-    Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
+    Events.scrollEvent.register('end', function() {      
+      return;
     });
   };
 
@@ -29,8 +29,7 @@ class Home extends React.Component {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart'
-    });
-    console.log("scrollTo invoked");
+    });    
   };
 
   render() {

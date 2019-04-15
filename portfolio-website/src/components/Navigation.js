@@ -13,11 +13,11 @@ class Navigation extends React.Component {
 
   componentDidMount() {
     Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
+      return;
     });
 
     Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
+      return;
     });
   };
 
@@ -31,8 +31,7 @@ class Navigation extends React.Component {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart'
-    });
-    console.log("scrollTo invoked");
+    });    
   };
 
   clickMenu = (event) => {
