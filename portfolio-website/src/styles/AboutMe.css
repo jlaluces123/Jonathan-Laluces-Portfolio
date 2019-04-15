@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   height: 100vh;
-  background-color: #98D2EB;
+  background-color: #f5f2d0;
 }
 
 .left-side {
@@ -18,15 +18,15 @@
 }
 
 .profile-name {
-  color: white;
+  color: black;
   font-size: 2rem;  
   margin-bottom: 0;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid black;
   display: inline-block; /* This is solely for the border bottom */
 }
 
 .title {
-  color: white;
+  color: black;
 }
 
 .image-wrapper {
@@ -47,7 +47,7 @@
 .description-text {
   margin: 0 20%;
   text-align: left;
-  color: white;
+  color: black;
   font-weight: 200;
   line-height: 1.7;
 }
