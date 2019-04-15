@@ -12,7 +12,7 @@ export const Projects = props => {
       <div className = "row">
         {/* Picture of App */}
         <div className = "app-pic-wrapper">
-          <a href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">
+          <a rel="noopener noreferrer" href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">
             <img src = {ScreenShotOne} alt = "events-page" className = "app-screen-shot" />
           </a>
         </div>
@@ -41,7 +41,7 @@ export const Projects = props => {
       <div className = "row row-2">
          {/* Picture of App */}
          <div className = "app-pic-wrapper">
-          <a href = "https://github.com/jlaluces123/TakeNotes" target = "_blank">
+          <a rel="noopener noreferrer" href = "https://github.com/jlaluces123/TakeNotes" target = "_blank">
             <img src = {ScreenShotTwo} alt = "events-page" className = "app-screen-shot" />
           </a>
         </div>
@@ -70,7 +70,7 @@ export const Projects = props => {
       <div className = "row">
         {/* Picture of App */}
         <div className = "app-pic-wrapper">
-          <a href = "https://taco-run-c453f.firebaseapp.com/" target = "_blank">
+          <a rel="noopener noreferrer" href = "https://hungry-shannon-d42678.netlify.com/" target = "_blank">
             <img src = {ScreenShotThree} alt = "events-page" className = "app-screen-shot" />
           </a>
         </div>
