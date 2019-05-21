@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/AboutMe.css";
 
 export const AboutMe = (props) => {
-
   return (
     <div className = "about-me-wrapper"> 
       <div className = "left-side">
