@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Navigation.css";
-import Logo from "../images/Logo.png";
 
 // --> Module Imports
 import { Link, Events, animateScroll as scroller } from "react-scroll";
@@ -31,11 +30,11 @@ class Navigation extends React.Component {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart'
-    });    
+    });
   };
 
   clickMenu = (event) => {
-    event.preventDefault();    
+    event.preventDefault();
     let currentState = this.state.active;
     this.setState({ active: !currentState }); // --> Flip Flop
   };
@@ -43,14 +42,15 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className = "navigation-wrapper">
-        <img className = "logo" src = {Logo} alt = "logo" />
-  
+
+        <h3>Jonathan Laluces.</h3>
+
         <div className = "hamburger-menu" >
           <a className = "toggle" onClick = {this.clickMenu} href = "/#">
             <svg className = {this.state.active ? "hide" : "active-on"} style={{ width: 40, height: 40 }} viewBox="0 0 24 24">
               <path className = "arrow-right" fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-            </svg>  
-          </a>    
+            </svg>
+          </a>
 
           <div className = {this.state.active ? "active-style" : "pages-list"}>
             <a className = "toggle" onClick = {this.clickMenu} href = "/#">
@@ -59,7 +59,7 @@ class Navigation extends React.Component {
               </svg>
             </a>
 
-            <ul className = "pages-menu">              
+            <ul className = "pages-menu">
               <li><Link to = "home" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Home</Link></li>
               <li><Link to = "about-me" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>About</Link></li>
               <li><Link to = "skills" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Skills</Link></li>
@@ -67,13 +67,13 @@ class Navigation extends React.Component {
               <li><Link to = "writing" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Writing</Link></li>
               <li><Link to = "contact" className = "pages-menu-item" smooth = {true} onClick = {() => this.scrollTo()}>Contact</Link></li>
             </ul>
-            
+
           </div>
         </div>
-  
+
       </div>
     ); // --> Return statement
-  }  
+  }
 }; // --> Navigation Brace
 
 export default Navigation;
